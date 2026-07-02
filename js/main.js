@@ -151,12 +151,40 @@ function initMobileNav() {
   const toggle = document.getElementById('navToggle');
   const nav = document.getElementById('nav');
   const links = nav?.querySelectorAll('.nav__link, .nav__mobile-btn');
+  let scrollY = 0;
+
+  const preventBackgroundScroll = e => {
+    if (!nav?.classList.contains('open')) return;
+    if (nav.contains(e.target)) return;
+    e.preventDefault();
+  };
+
+  const lockBackgroundScroll = () => {
+    document.addEventListener('touchmove', preventBackgroundScroll, { passive: false });
+    document.addEventListener('wheel', preventBackgroundScroll, { passive: false });
+  };
+
+  const unlockBackgroundScroll = () => {
+    document.removeEventListener('touchmove', preventBackgroundScroll);
+    document.removeEventListener('wheel', preventBackgroundScroll);
+  };
 
   const setNavOpen = isOpen => {
     nav?.classList.toggle('open', isOpen);
     toggle?.classList.toggle('open', isOpen);
     toggle?.setAttribute('aria-expanded', String(isOpen));
+    document.documentElement.classList.toggle('mobile-nav-open', isOpen);
     document.body.classList.toggle('mobile-nav-open', isOpen);
+
+    if (isOpen) {
+      scrollY = window.scrollY;
+      document.body.style.top = `-${scrollY}px`;
+      lockBackgroundScroll();
+    } else {
+      document.body.style.top = '';
+      window.scrollTo(0, scrollY);
+      unlockBackgroundScroll();
+    }
   };
 
   toggle?.addEventListener('click', () => {
