@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#2a1810">
+  <meta name="description" content="Chatoras Food — Authentic Indian street food. Puffs, Pani Puri, Vada Pav & more. Pure taste, great quality, made with love.">
+  <title>Chatoras Food | Taste Goodness Every Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+Devanagari:wght@500;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo-header.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>
+      <span class="announcement-bar__status">We are open</span>
+      <span class="announcement-bar__sep" aria-hidden="true">·</span>
+      <span class="announcement-bar__hours"><strong>Mon–Fri</strong> 3:30 PM – 10 PM</span>
+      <span class="announcement-bar__sep" aria-hidden="true">·</span>
+      <span class="announcement-bar__hours"><strong>Sat–Sun</strong> 9 AM – 10 PM</span>
+    </p>
+  </div>
+
+  <div class="site-header header" id="header">
+    <div class="header__gold-line" aria-hidden="true"></div>
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="Chatoras Food home">
+        <span class="logo__mark">
+          <img src="assets/logo-header.png" alt="" class="logo__img" width="120" height="125">
+        </span>
+        <span class="logo__text">
+          <span class="logo__name">Chatoras Food</span>
+          <span class="logo__tagline">असली स्वाद · Orpington</span>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <div class="nav__panel-head">
+          <div class="nav__panel-brand">
+            <span class="nav__panel-name">Chatoras Food</span>
+            <span class="nav__panel-tagline">असली स्वाद · Orpington</span>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#showcase" class="nav__link">Dishes</a></li>
+          <li><a href="#menu" class="nav__link">Menu</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-actions">
+          <a href="#menu" class="btn btn--premium nav__mobile-btn">View Menu</a>
+          <a href="tel:+447448735777" class="btn btn--outline nav__mobile-btn">Call Now</a>
+        </div>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+447448735777" class="header__phone" aria-label="Call Chatoras Food">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4h2.8l1.2 3.5-1.8 1.2a11 11 0 0 0 5.8 5.8l1.2-1.8L19 15.7V18.5A2 2 0 0 1 17.2 20.5 14.5 14.5 0 0 1 3.5 6.8 2 2 0 0 1 5.5 4.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <span>Order Now By Phone</span>
+        </a>
+        <a href="#menu" class="btn btn--premium header__cta">View Menu</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/vadapav.jpeg" alt="" class="hero__bg-photo">
+        <div class="hero__bg-overlay"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__panel reveal">
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-hindi">असली स्वाद</span>
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            <span>Orpington, UK</span>
+          </p>
+          <!-- <img src="assets/LOGO.PNG" alt="Chatoras Food" class="hero__logo" width="280" height="291"> -->
+          <h1 class="hero__headline">Where Every Bite Tells <em>a Story of Home</em></h1>
+          <p class="hero__desc">
+            Premium Indian street food — golden puffs, tangy chaat, iconic vada pav &amp; more. Freshly prepared, beautifully served, made with love every day.
+          </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--lg btn--premium">Explore Menu</a>
+            <a href="https://maps.app.goo.gl/HsB8eJHxSH7jZYSR7" class="btn btn--ghost btn--lg" target="_blank" rel="noopener noreferrer">Visit Us</a>
+          </div>
+          <ul class="hero__highlights">
+            <li>
+              <strong>Pure Veg</strong>
+              <span>100% vegetarian kitchen</span>
+            </li>
+            <li>
+              <strong>Fresh Daily</strong>
+              <span>Made to order</span>
+            </li>
+            <li>
+              <strong>Open 7 Days</strong>
+              <span>From 3:30 PM weekdays</span>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__stage" id="heroStage">
+            <div class="hero__stage-pivot" id="heroStagePivot">
+              <div class="hero__card" id="heroCard" data-tilt data-tilt-max="10">
+                <div class="tilt-card__inner">
+                  <!-- <div class="hero__card-shine"></div> -->
+                  <img src="assets/mayocadapav-hero.jpeg" alt="Cheese Vada Pav — signature dish" class="hero__product-img">
+                  <div class="hero__card-footer">
+                    <span class="hero__card-label">Signature Dish</span>
+                    <span class="hero__card-name">Cheese Vada Pav</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#showcase" class="hero__scroll" aria-label="Scroll to dishes">
+        <span>Discover</span>
+        <div class="hero__scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- Features -->
+    <section class="features" aria-labelledby="features-title">
+      <div class="features__ambient" aria-hidden="true">
+        <span class="features__orb features__orb--1"></span>
+        <span class="features__orb features__orb--2"></span>
+      </div>
+      <div class="container">
+        <div class="features__header reveal">
+          <div class="section-eyebrow">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-label section-label--light">Why Chatoras</span>
+            <span class="section-eyebrow__line section-eyebrow__line--right"></span>
+          </div>
+          <h2 class="features__title" id="features-title">Crafted With Care, <em>Served With Pride</em></h2>
+          <p class="features__intro">From golden pastry to hand-ground chutneys — every detail is made fresh, just for you.</p>
+        </div>
+        <div class="features__grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 22c2-6 6-10 8-14 2 4 6 8 8 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 22h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M11 18h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+              </svg>
+            </div>
+            <span class="feature-card__index">01</span>
+            <h3>Crispy Puffs</h3>
+            <p>Flaky, golden pastry filled with spiced potato &amp; your favourite sauces.</p>
+            <span class="feature-card__line" aria-hidden="true"></span>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 26V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M16 14c-3-4-8-5-10-2s1 8 10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 14c3-4 8-5 10-2s-1 8-10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 10c0-3 2-6 4-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+              </svg>
+            </div>
+            <span class="feature-card__index">02</span>
+            <h3>Fresh Ingredients</h3>
+            <p>Only the finest vegetables, spices &amp; chutneys in every bite.</p>
+            <span class="feature-card__line" aria-hidden="true"></span>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 10c-2 3-2 6 0 12 2-6 2-9 0-12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M11 16h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+              </svg>
+            </div>
+            <span class="feature-card__index">03</span>
+            <h3>Pure Veg</h3>
+            <p>100% vegetarian — wholesome flavours for everyone to enjoy.</p>
+            <span class="feature-card__line" aria-hidden="true"></span>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon-wrap" aria-hidden="true">
+              <svg class="feature-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 27s-9-6-9-13a5.5 5.5 0 0 1 9-3.5A5.5 5.5 0 0 1 25 14c0 7-9 13-9 13z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="feature-card__index">04</span>
+            <h3>Made With Love</h3>
+            <p>Every dish prepared with care, just like home-cooked goodness.</p>
+            <span class="feature-card__line" aria-hidden="true"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Dishes -->
+    <section class="showcase" id="showcase" aria-labelledby="showcase-title">
+      <div class="showcase__ambient" aria-hidden="true">
+        <span class="showcase__orb"></span>
+      </div>
+      <div class="container">
+        <div class="showcase__header reveal">
+          <div class="showcase__header-ornament" aria-hidden="true">
+            <span></span><span class="showcase__header-dot"></span><span></span>
+          </div>
+          <span class="section-label section-label--royal">Signature Dishes</span>
+          <h2 class="section-title showcase__title" id="showcase-title">Taste The <em>Favourites</em></h2>
+          <p class="showcase__subtitle">Handcrafted street food — bold flavours, premium presentation</p>
+          <a href="#menu" class="showcase__cta">View Full Menu <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="showcase__grid">
+          <article class="dish-card reveal">
+            <div class="dish-card__inner">
+              <div class="dish-card__img-wrap dish-card__img-wrap--vada">
+                <img src="assets/mayocadapav-hero.jpeg" alt="Cheese Vada Pav" loading="lazy">
+                <span class="dish-card__badge">Bestseller</span>
+              </div>
+              <div class="dish-card__body">
+                <span class="dish-card__tag">Street Classic</span>
+                <h3>Cheese Vada Pav</h3>
+                <p>Mumbai classic loaded with melted cheese &amp; chutneys</p>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card reveal">
+            <div class="dish-card__inner">
+              <div class="dish-card__img-wrap dish-card__img-wrap--dabeli">
+                <img src="assets/dabeli2.jpeg" alt="Dabeli" loading="lazy">
+              </div>
+              <div class="dish-card__body">
+                <span class="dish-card__tag">Gujarati Favourite</span>
+                <h3>Dabeli</h3>
+                <p>Gujarati spiced potato slider with sev &amp; pomegranate</p>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card reveal">
+            <div class="dish-card__inner">
+              <div class="dish-card__img-wrap dish-card__img-wrap--samosa">
+                <img src="assets/samosa.jpeg" alt="Samosa" loading="lazy">
+              </div>
+              <div class="dish-card__body">
+                <span class="dish-card__tag">Timeless Classic</span>
+                <h3>Samosa</h3>
+                <p>Golden crispy pastry with spiced potato filling</p>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card reveal">
+            <div class="dish-card__inner">
+              <div class="dish-card__img-wrap dish-card__img-wrap--dahi">
+                <img src="assets/pakodi2.jpeg" alt="Dahi Puri" loading="lazy">
+              </div>
+              <div class="dish-card__body">
+                <span class="dish-card__tag">Chaat Special</span>
+                <h3>Dahi Puri</h3>
+                <p>Crispy puris topped with yogurt, chutney &amp; sev</p>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card reveal">
+            <div class="dish-card__inner">
+              <div class="dish-card__img-wrap dish-card__img-wrap--puffs">
+                <img src="assets/dabeli.jpeg" alt="Signature Puffs" loading="lazy">
+              </div>
+              <div class="dish-card__body">
+                <span class="dish-card__tag">House Special</span>
+                <h3>Signature Puffs</h3>
+                <p>Flaky pastry with potato filling &amp; signature sauces</p>
+              </div>
+            </div>
+          </article>
+          <article class="dish-card reveal">
+            <div class="dish-card__inner">
+              <div class="dish-card__img-wrap dish-card__img-wrap--bhel">
+                <img src="assets/bhel.jpeg" alt="Bhel Chaat" loading="lazy">
+                <span class="dish-card__badge dish-card__badge--green">Chef's Pick</span>
+              </div>
+              <div class="dish-card__body">
+                <span class="dish-card__tag">Chaat Special</span>
+                <h3>Bhel Chaat</h3>
+                <p>Tangy, crunchy chaat with chutneys &amp; fresh herbs</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__backdrop" aria-hidden="true">
+        <span class="about__glow about__glow--1"></span>
+        <span class="about__glow about__glow--2"></span>
+      </div>
+      <div class="container about__inner">
+        <div class="about__media reveal">
+          <button type="button" class="about__img-trigger" data-menu-zoom aria-label="View menu card in full size">
+            <div class="about__frame">
+              <div class="about__frame-border" aria-hidden="true"></div>
+              <div class="about__frame-inner">
+                <img src="assets/finalMenu.png" alt="" class="about__img">
+              </div>
+              <span class="about__frame-corner about__frame-corner--tl" aria-hidden="true"></span>
+              <span class="about__frame-corner about__frame-corner--tr" aria-hidden="true"></span>
+              <span class="about__frame-corner about__frame-corner--bl" aria-hidden="true"></span>
+              <span class="about__frame-corner about__frame-corner--br" aria-hidden="true"></span>
+              <span class="about__zoom-hint" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <span>View full menu</span>
+              </span>
+            </div>
+          </button>
+          <p class="about__caption">Our curated menu — tap image to zoom</p>
+        </div>
+        <div class="about__content reveal">
+          <div class="about__eyebrow">
+            <span class="about__eyebrow-line" aria-hidden="true"></span>
+            <span class="section-label section-label--royal">Our Story</span>
+            <span class="about__eyebrow-line" aria-hidden="true"></span>
+          </div>
+          <h2 class="about__title" id="about-title">Authentic Street Food,<br><em>Made Fresh Daily</em></h2>
+          <p class="about__lead">
+            Welcome to <strong>Chatoras Food</strong> — where the vibrant flavours of Indian street food are elevated with care, craft, and uncompromising quality.
+          </p>
+          <p class="about__text">
+            From our signature crispy puffs to tangy pani puri and hearty vada pav, every dish honours authentic recipes and the finest ingredients. Born from a passion for <span class="about__hindi">असली स्वाद</span>, we bring the soul of India's food streets to Orpington.
+          </p>
+          <ul class="about__highlights">
+            <li>
+              <span class="about__highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.2 6.8H21l-5.5 4 2.1 6.7L12 16.5 6.4 20.5l2.1-6.7L3 9.8h6.8L12 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Hygienic Kitchen</strong>
+                <span>Food-safe preparation, every single day</span>
+              </div>
+            </li>
+            <li>
+              <span class="about__highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg>
+              </span>
+              <div>
+                <strong>Curated Selection</strong>
+                <span>Puffs, chaat, snacks &amp; timeless classics</span>
+              </div>
+            </li>
+            <li>
+              <span class="about__highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>Open Seven Days</strong>
+                <span>Mon–Fri 3:30 PM – 10 PM · Sat–Sun 9 AM – 10 PM</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="menu__backdrop" aria-hidden="true"></div>
+      <div class="container">
+        <div class="menu__header reveal">
+          <div class="section-eyebrow">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-label section-label--royal">Super Delicious Menu</span>
+            <span class="section-eyebrow__line section-eyebrow__line--right"></span>
+          </div>
+          <h2 class="section-title menu__title" id="menu-title">Our <em>Specialities</em></h2>
+          <p class="menu__subtitle">Browse by category or view our full printed menu card</p>
+        </div>
+
+        <div class="menu__layout">
+          <aside class="menu__aside">
+            <div class="menu__aside-inner reveal">
+              <div class="royal-frame menu__card-frame">
+                <span class="royal-frame__border" aria-hidden="true"></span>
+                <div class="royal-frame__inner">
+                  <img src="assets/finalMenu.png" alt="Chatoras Food official menu card" loading="lazy">
+                </div>
+                <span class="royal-frame__corner royal-frame__corner--tl" aria-hidden="true"></span>
+                <span class="royal-frame__corner royal-frame__corner--tr" aria-hidden="true"></span>
+                <span class="royal-frame__corner royal-frame__corner--bl" aria-hidden="true"></span>
+                <span class="royal-frame__corner royal-frame__corner--br" aria-hidden="true"></span>
+              </div>
+              <p class="menu__card-caption">Official menu card · All prices in GBP</p>
+            </div>
+          </aside>
+
+          <div class="menu__content">
+            <div class="menu__toolbar reveal">
+              <p class="menu__stats" id="menuStats" aria-live="polite"></p>
+              <a href="tel:+447448735777" class="menu__order-link">Order by phone →</a>
+            </div>
+            <div class="menu__filters" role="tablist" aria-label="Menu categories">
+              <button class="menu__filter active" data-filter="all" role="tab" aria-selected="true">All Items</button>
+              <button class="menu__filter" data-filter="pani-puri" role="tab">Pani Puri</button>
+              <button class="menu__filter" data-filter="puff" role="tab">Puff</button>
+              <button class="menu__filter" data-filter="vada-pav" role="tab">Vada Pav</button>
+              <button class="menu__filter" data-filter="sandwich" role="tab">Sandwich</button>
+              <button class="menu__filter" data-filter="dabeli" role="tab">Dabeli</button>
+              <button class="menu__filter" data-filter="samosa" role="tab">Samosa</button>
+              <button class="menu__filter" data-filter="drinks" role="tab">Drinks</button>
+            </div>
+            <div class="menu__grid" id="menuGrid"></div>
+            <p class="menu__footer-note reveal">Your special occasions deserve something special — we're now accepting orders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery__backdrop" aria-hidden="true">
+        <span class="gallery__glow"></span>
+      </div>
+      <div class="container">
+        <div class="gallery__header reveal">
+          <div class="section-eyebrow">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-label section-label--light">Visual Feast</span>
+            <span class="section-eyebrow__line section-eyebrow__line--right"></span>
+          </div>
+          <h2 class="section-title gallery__title" id="gallery-title">From Our <em>Kitchen</em></h2>
+          <p class="gallery__subtitle">A glimpse into the artistry behind every plate</p>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--large reveal">
+            <div class="gallery__item-inner">
+              <img src="assets/mayocadapav-hero.jpeg" alt="Cheese Vada Pav" loading="lazy">
+              <figcaption>Cheese Vada Pav</figcaption>
+            </div>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__item-inner">
+              <img src="assets/dabeli2.jpeg" alt="Dabeli" loading="lazy">
+              <figcaption>Dabeli</figcaption>
+            </div>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__item-inner">
+              <img src="assets/samosa.jpeg" alt="Samosa" loading="lazy">
+              <figcaption>Samosa</figcaption>
+            </div>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__item-inner">
+              <img src="assets/pakodi2.jpeg" alt="Dahi Puri" loading="lazy">
+              <figcaption>Dahi Puri</figcaption>
+            </div>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__item-inner">
+              <img src="assets/vadapav.jpeg" alt="Vada Pav" loading="lazy">
+              <figcaption>Vada Pav</figcaption>
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--wide reveal">
+            <div class="gallery__item-inner">
+              <img src="assets/dabeli.jpeg" alt="Signature Puffs" loading="lazy">
+              <figcaption>Signature Puffs</figcaption>
+            </div>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__item-inner">
+              <img src="assets/bhel.jpeg" alt="Bhel Chaat" loading="lazy">
+              <figcaption>Bhel Chaat</figcaption>
+            </div>
+          </figure>
+          <figure class="gallery__item reveal">
+            <div class="gallery__item-inner">
+              <img src="assets/pakodi.jpeg" alt="Pani Puri platter" loading="lazy">
+              <figcaption>Pani Puri</figcaption>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-label="Call to order">
+      <div class="cta-banner__pattern" aria-hidden="true"></div>
+      <div class="container cta-banner__inner reveal">
+        <div class="cta-banner__text">
+          <p class="cta-banner__eyebrow">Reserve Your Table</p>
+          <h2>Hungry? <em>We're Ready For You</em></h2>
+          <p>Visit us or call to place your order — fresh food, refined service, unforgettable taste.</p>
+        </div>
+        <a href="tel:+447448735777" class="btn btn--premium btn--lg">Order Now By Phone</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__backdrop" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <div class="contact__info reveal">
+          <div class="section-eyebrow contact__eyebrow">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-label section-label--royal">Get In Touch</span>
+            <span class="section-eyebrow__line section-eyebrow__line--right"></span>
+          </div>
+          <h2 class="section-title contact__title" id="contact-title">Visit <em>Chatoras</em></h2>
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              </span>
+              <div>
+                <strong>Address</strong>
+                <p><a href="https://maps.app.goo.gl/HsB8eJHxSH7jZYSR7" target="_blank" rel="noopener noreferrer">267 High St.<br>Orpington, BR6 0NW, UK</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 4h2.8l1.2 3.5-1.8 1.2a11 11 0 0 0 5.8 5.8l1.2-1.8L19 15.7V18.5A2 2 0 0 1 17.2 20.5 14.5 14.5 0 0 1 3.5 6.8 2 2 0 0 1 5.5 4.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+447448735777">Order Now By Phone</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:chatorasfood@gmail.com">chatorasfood@gmail.com</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Fri · 3:30 PM – 10:00 PM<br>Sat–Sun · 9:00 AM – 10:00 PM</p>
+              </div>
+            </li>
+          </ul>
+          <div class="contact__social">
+            <a href="https://instagram.com/chatoras.food" target="_blank" rel="noopener noreferrer" aria-label="Follow Chatoras Food on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              Instagram
+            </a>
+          </div>
+          <a href="https://maps.app.goo.gl/HsB8eJHxSH7jZYSR7" class="contact__directions" target="_blank" rel="noopener noreferrer">Get Directions →</a>
+        </div>
+        <div class="contact__map reveal">
+          <div class="royal-frame contact__map-frame">
+            <span class="royal-frame__border" aria-hidden="true"></span>
+            <div class="royal-frame__inner contact__map-inner">
+              <iframe
+                class="contact__map-embed"
+                title="Chatoras Food on Google Maps"
+                src="https://maps.google.com/maps?q=51.3748256,0.0988623&ll=51.3748256,0.0988623&z=18&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <span class="royal-frame__corner royal-frame__corner--tl" aria-hidden="true"></span>
+            <span class="royal-frame__corner royal-frame__corner--tr" aria-hidden="true"></span>
+            <span class="royal-frame__corner royal-frame__corner--bl" aria-hidden="true"></span>
+            <span class="royal-frame__corner royal-frame__corner--br" aria-hidden="true"></span>
+          </div>
+          <div class="contact__open-badge">
+            <span>WE ARE</span>
+            <strong>OPEN</strong>
+            <span>OPEN DAILY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="mobile-dock" aria-label="Quick actions">
+    <a href="tel:+447448735777" class="mobile-dock__item mobile-dock__item--call">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4h2.8l1.2 3.5-1.8 1.2a11 11 0 0 0 5.8 5.8l1.2-1.8L19 15.7V18.5A2 2 0 0 1 17.2 20.5 14.5 14.5 0 0 1 3.5 6.8 2 2 0 0 1 5.5 4.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <span>Call</span>
+    </a>
+    <a href="#menu" class="mobile-dock__item mobile-dock__item--menu">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <span>Menu</span>
+    </a>
+    <a href="https://maps.app.goo.gl/HsB8eJHxSH7jZYSR7" class="mobile-dock__item mobile-dock__item--map" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+      <span>Map</span>
+    </a>
+  </aside>
+
+  <footer class="footer">
+    <div class="footer__gold-line" aria-hidden="true"></div>
+    <div class="footer__glow footer__glow--1" aria-hidden="true"></div>
+    <div class="footer__glow footer__glow--2" aria-hidden="true"></div>
+    <div class="container footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo-wrap">
+            <img src="assets/logo-header.png" alt="Chatoras Food" class="footer__logo" width="100" height="104">
+          </div>
+          <p class="footer__name">Chatoras Food</p>
+          <p class="footer__tagline">Pure taste · Great quality · <em>Made with love</em></p>
+          <p class="footer__hindi">असली स्वाद · Orpington, UK</p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Explore</h3>
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#showcase">Dishes</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Visit Us</h3>
+          <ul class="footer__contact">
+            <li>
+              <a href="https://maps.app.goo.gl/HsB8eJHxSH7jZYSR7" target="_blank" rel="noopener noreferrer">267 High St, Orpington BR6 0NW</a>
+            </li>
+            <li>
+              <a href="tel:+447448735777">+44 7448 735777</a>
+            </li>
+            <li>
+              <a href="mailto:chatorasfood@gmail.com">chatorasfood@gmail.com</a>
+            </li>
+          </ul>
+          <div class="footer__hours">
+            <strong>Opening Hours</strong>
+            <p>Mon–Fri · 3:30 PM – 10 PM<br>Sat–Sun · 9 AM – 10 PM</p>
+          </div>
+          <a href="https://instagram.com/chatoras.food" class="footer__instagram" target="_blank" rel="noopener noreferrer" aria-label="Follow Chatoras Food on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            <span>@chatoras.food</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="year"></span> Chatoras Food. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="menu-lightbox" id="menuLightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="menuLightboxTitle">
+    <div class="menu-lightbox__backdrop" data-menu-lightbox-close tabindex="-1"></div>
+    <div class="menu-lightbox__dialog">
+      <button type="button" class="menu-lightbox__close" data-menu-lightbox-close aria-label="Close menu view">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <p class="menu-lightbox__title" id="menuLightboxTitle">Chatoras Food Menu</p>
+      <div class="menu-lightbox__frame">
+        <img src="assets/finalMenu.png" alt="Chatoras Food full menu card with prices" class="menu-lightbox__img">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
