@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order confirmed | Chatoras Food</title>
+<link rel="icon" href="assets/logo-header.png">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif;background:#fff7df;color:#2f210f}
+.box{background:#fff;border:1px solid #ead9bd;border-radius:20px;padding:36px;max-width:440px;text-align:center;box-shadow:0 16px 50px rgba(67,27,6,.12)}
+img{width:80px}h1{color:#431b06;margin:10px 0}a{display:inline-block;margin-top:18px;background:#e96f00;color:#fff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:700}
+</style></head><body>
+<div class="box"><img src="assets/logo-removebg.png" alt="">
+<h1 id="h">Checking your payment…</h1><p id="p"></p><a href="index.html">Back to home</a></div>
+<script>
+const q = new URLSearchParams(location.search);
+fetch(`/api/order-status?order=${q.get('order')}&session_id=${q.get('session_id')}`)
+  .then(r => r.json()).then(o => {
+    const h = document.getElementById('h'), p = document.getElementById('p');
+    if (!o.paid) { h.textContent = 'Payment not confirmed yet'; p.textContent = 'If you were charged, your order will be confirmed shortly. Call +44 7448 735777 if in doubt.'; return; }
+    h.textContent = 'Thank you! Order #' + o.id + ' confirmed';
+    p.textContent = `Collect on ${o.date.slice(0,10)} between ${o.time}. Total paid £${(o.totalPence/100).toFixed(2)}.`;
+  }).catch(() => { document.getElementById('h').textContent = 'Could not load order'; });
+</script></body></html>

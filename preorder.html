@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/logo-header.png" type="image/png">
+  <title>Pre-Order Fafda & Jalebi | Chatoras Food</title>
+  <meta name="description" content="Pre-book fresh Fafda and Jalebi from Chatoras Food, Orpington." />
+  <style>
+    :root{
+      --cream:#fff7df;
+      --cream-2:#fffdf6;
+      --brown:#431b06;
+      --orange:#ff8a00;
+      --orange-dark:#e96f00;
+      --olive:#6d7f16;
+      --green:#53640f;
+      --text:#2f210f;
+      --muted:#7a6c59;
+      --line:#ead9bd;
+      --success:#277a42;
+      --shadow:0 16px 50px rgba(67,27,6,.12);
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,var(--cream) 0%,#fff 34%,#fffaf0 100%);color:var(--text)}
+    a{color:inherit}
+    .topbar{background:var(--brown);color:#fff;text-align:center;padding:9px 16px;font-size:14px;letter-spacing:.1px}
+    .shell{width:min(1180px,calc(100% - 32px));margin:auto}
+    header{padding:18px 0;border-bottom:1px solid rgba(67,27,6,.08);background:rgba(255,253,246,.93);backdrop-filter:blur(10px);position:sticky;top:0;z-index:5}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .brand img{width:82px;height:82px;object-fit:contain}
+    .brand-copy strong{display:block;font-size:20px;color:var(--brown)}
+    .brand-copy span{font-size:13px;color:var(--muted)}
+    .nav-pill{border:1px solid var(--line);border-radius:999px;padding:10px 15px;background:#fff;font-weight:700;color:var(--brown);text-decoration:none}
+
+    .hero{padding:46px 0 24px}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff1d7;border:1px solid #ffd18b;color:#8a4400;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:800}
+    h1{font-size:clamp(38px,5vw,66px);line-height:.98;margin:17px 0 14px;color:var(--brown);letter-spacing:-2px}
+    .accent{color:var(--orange-dark)}
+    .lead{font-size:18px;line-height:1.7;color:#66543f;max-width:700px;margin:0}
+    .trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .chip{background:#fff;border:1px solid var(--line);padding:9px 12px;border-radius:12px;font-size:13px;font-weight:700}
+    .hero-card{background:linear-gradient(145deg,#4a2008,#2d1204);color:#fff;border-radius:28px;padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .hero-card:after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:radial-gradient(circle,rgba(255,138,0,.34),transparent 68%);right:-55px;bottom:-55px}
+    .hero-card h2{margin:0 0 10px;font-size:27px}
+    .hero-card p{margin:0;color:#f2ddc7;line-height:1.6}
+    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+    .mini{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:15px;padding:14px}
+    .mini b{display:block;color:#ffb142;margin-bottom:4px}.mini span{font-size:13px;color:#f4e4d4}
+
+    main{padding:28px 0 70px}
+    .layout{display:grid;grid-template-columns:1.4fr .6fr;gap:26px;align-items:start}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 8px 30px rgba(67,27,6,.06);overflow:hidden}
+    .card-head{padding:24px 24px 16px;border-bottom:1px solid #f1e6d3}
+    .card-head h2{margin:0 0 7px;color:var(--brown);font-size:25px}.card-head p{margin:0;color:var(--muted);font-size:14px}
+    .section{padding:24px}.section + .section{border-top:1px solid #f1e6d3}
+    .section-title{font-size:16px;margin:0 0 14px;color:var(--brown)}
+
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .product{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--cream-2);transition:.2s}
+    .product:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(67,27,6,.08)}
+    .product .icon{width:45px;height:45px;border-radius:13px;background:#fff0d6;display:grid;place-items:center;font-size:24px;margin-bottom:12px}
+    .product h3{font-size:17px;margin:0 0 5px;color:var(--brown)}
+    .product p{font-size:13px;color:var(--muted);margin:0 0 12px;min-height:38px}
+    .price{font-weight:900;color:var(--green);font-size:18px}
+    .qty{display:flex;align-items:center;gap:8px;margin-top:12px}
+    .qty label{font-size:12px;font-weight:800;color:#6c5a45}.qty input{width:72px;padding:9px 10px;border:1px solid #d9c8ac;border-radius:10px;background:#fff;font-weight:800}
+
+    .fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+    label{font-size:13px;font-weight:800;color:#594733}
+    input,select,textarea{width:100%;border:1px solid #d9c8ac;border-radius:12px;padding:13px 14px;font:inherit;color:var(--text);background:#fff;outline:none;transition:.2s}
+    input:focus,select:focus,textarea:focus{border-color:var(--orange);box-shadow:0 0 0 4px rgba(255,138,0,.12)}
+    textarea{min-height:96px;resize:vertical}
+
+    .summary{position:sticky;top:128px}
+    .summary-body{padding:22px}
+    .summary-logo{display:flex;align-items:center;gap:10px;padding-bottom:16px;border-bottom:1px solid #f1e6d3;margin-bottom:16px}
+    .summary-logo img{width:62px;height:62px;object-fit:contain}.summary-logo b{display:block;color:var(--brown)}.summary-logo span{font-size:12px;color:var(--muted)}
+    .row{display:flex;justify-content:space-between;gap:18px;padding:8px 0;color:#5b4a36}.row strong{color:var(--brown)}
+    .total{display:flex;justify-content:space-between;align-items:end;border-top:1px dashed #d6c1a1;margin-top:10px;padding-top:16px}.total span{font-size:14px;color:var(--muted)}.total b{font-size:28px;color:var(--brown)}
+    .stripe{margin:18px 0;background:#f7f4ff;border:1px solid #ded6ff;padding:12px 13px;border-radius:13px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#4d3e7a}.stripe strong{color:#635bff;font-size:16px}
+    .pay{width:100%;border:0;border-radius:13px;background:linear-gradient(135deg,var(--orange),var(--orange-dark));color:white;padding:15px 16px;font:inherit;font-weight:900;cursor:pointer;box-shadow:0 10px 24px rgba(233,111,0,.24)}
+    .pay:hover{filter:brightness(.97)}
+    .small{font-size:11px;line-height:1.55;color:#8a7b68;margin:12px 0 0;text-align:center}
+    .flow{margin-top:14px;display:grid;gap:8px}.flow div{display:flex;gap:9px;align-items:center;font-size:12px;color:#6e5d49}.dot{width:20px;height:20px;border-radius:50%;background:#edf5de;color:var(--success);display:grid;place-items:center;font-weight:900}
+
+    .notice{margin:0 24px 24px;padding:13px 15px;border-radius:12px;background:#fff6e5;border:1px solid #ffd49a;font-size:12px;color:#7d4b10}
+    footer{background:#321505;color:#f7eadc;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}.foot small{color:#d9c4b0}
+
+    @media (max-width:900px){.hero-grid,.layout{grid-template-columns:1fr}.summary{position:static}.products{grid-template-columns:1fr 1fr}.hero{padding-top:28px}}
+    @media (max-width:620px){.shell{width:min(100% - 20px,1180px)}.brand-copy{display:none}.brand img{width:66px;height:66px}.nav-pill{font-size:12px;padding:9px 11px}.products,.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.hero-card{padding:22px}.section,.card-head{padding-left:18px;padding-right:18px}h1{letter-spacing:-1.2px}.topbar{font-size:12px}.mini-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="topbar">Freshly prepared • 100% vegetarian • Pre-book for collection</div>
+
+  <header>
+    <div class="shell nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-removebg.png" alt="Chatoras Food logo" />
+        <div class="brand-copy">
+          <strong>Chatoras Food</strong>
+          <span>असली स्वाद · Orpington</span>
+        </div>
+      </a>
+      <a class="nav-pill" href="tel:+447448735777">Need help? +44 7448 735777</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div>
+        <div class="eyebrow">✨ FESTIVE PRE-BOOKING</div>
+        <h1>Fresh <span class="accent">Fafda & Jalebi</span>, ready when you are.</h1>
+        <p class="lead">Reserve your order online, choose a collection slot and pay securely by card. Your order is confirmed only after successful payment.</p>
+        <div class="trust">
+          <div class="chip">✓ Pure Veg</div><div class="chip">✓ Freshly Prepared</div><div class="chip">✓ Secure Stripe Payment</div><div class="chip">✓ Order Confirmation</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Simple pre-ordering</h2>
+        <p>Reserve online, pick a slot and pay securely by card.</p>
+        <div class="mini-grid">
+          <div class="mini"><b>01 · Choose</b><span>Select items and quantity</span></div>
+          <div class="mini"><b>02 · Collect</b><span>Choose date and time</span></div>
+          <div class="mini"><b>03 · Pay</b><span>Stripe Checkout</span></div>
+          <div class="mini"><b>04 · Confirm</b><span>CRM + WhatsApp + email</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="shell layout">
+      <form id="orderForm" class="card">
+        <div class="card-head">
+          <h2>Build your pre-order</h2>
+          <p>Select the quantity you need.</p>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">1. Select products</h3>
+          <div class="products">
+            <div class="product">
+              <div class="icon">🥨</div>
+              <h3>Fafda · 500g</h3>
+              <p>Fresh, crispy Gujarati fafda.</p>
+              <div class="price">£1.00</div>
+              <div class="qty"><label for="fafda">QTY</label><input id="fafda" name="fafda_qty" type="number" min="0" max="20" value="0" data-price="1"></div>
+            </div>
+            <div class="product">
+              <div class="icon">🌀</div>
+              <h3>Jalebi · 500g</h3>
+              <p>Fresh, sweet and crispy jalebi.</p>
+              <div class="price">£1.00</div>
+              <div class="qty"><label for="jalebi">QTY</label><input id="jalebi" name="jalebi_qty" type="number" min="0" max="20" value="0" data-price="1"></div>
+            </div>
+            <div class="product">
+              <div class="icon">🧺</div>
+              <h3>Fafda + Jalebi Combo</h3>
+              <p>500g Fafda + 500g Jalebi.</p>
+              <div class="price">£2.00</div>
+              <div class="qty"><label for="combo">QTY</label><input id="combo" name="combo_qty" type="number" min="0" max="20" value="0" data-price="2"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">2. Collection details</h3>
+          <div class="fields">
+            <div class="field"><label for="date">Collection date *</label><input id="date" name="collection_date" type="date" required></div>
+            <div class="field"><label for="time">Collection time *</label><select id="time" name="collection_time" required><option value="">Select a time</option><option>09:00 - 10:00</option><option>10:00 - 11:00</option><option>11:00 - 12:00</option><option>12:00 - 13:00</option><option>13:00 - 14:00</option><option>14:00 - 15:00</option><option>15:00 - 16:00</option><option>16:00 - 17:00</option><option>17:00 - 18:00</option><option>18:00 - 19:00</option><option>19:00 - 20:00</option></select></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">3. Your details</h3>
+          <div class="fields">
+            <div class="field"><label for="name">Full name *</label><input id="name" name="full_name" autocomplete="name" placeholder="Your full name" required></div>
+            <div class="field"><label for="mobile">Mobile / WhatsApp *</label><input id="mobile" name="mobile" autocomplete="tel" placeholder="07..." required></div>
+            <div class="field full"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required></div>
+            <div class="field full"><label for="notes">Order notes</label><textarea id="notes" name="notes" placeholder="Any notes for the kitchen?"></textarea></div>
+          </div>
+        </div>
+      </form>
+
+      <aside class="card summary">
+        <div class="summary-body">
+          <div class="summary-logo">
+            <img src="assets/logo-removebg.png" alt="Chatoras Food" />
+            <div><b>Order Summary</b><span>267 High St, Orpington BR6 0NW</span></div>
+          </div>
+          <div class="row"><span>Fafda</span><strong id="fafdaTotal">£0.00</strong></div>
+          <div class="row"><span>Jalebi</span><strong id="jalebiTotal">£0.00</strong></div>
+          <div class="row"><span>Combo</span><strong id="comboTotal">£0.00</strong></div>
+          <div class="total"><span>Total to pay</span><b id="grandTotal">£0.00</b></div>
+          <div class="stripe"><span>Secure online payment</span><strong>stripe</strong></div>
+          <button class="pay" type="submit" form="orderForm">Continue to Secure Payment →</button>
+          <p class="small" id="msg">You will be redirected to Stripe to pay securely.</p>
+          <div class="flow">
+            <div><span class="dot">✓</span><span>Successful payment → save paid order in CRM</span></div>
+            <div><span class="dot">✓</span><span>Send order to restaurant WhatsApp</span></div>
+            <div><span class="dot">✓</span><span>Email customer + admin confirmation</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell foot">
+      <div><strong>Chatoras Food</strong><br><small>Pure taste · Great quality · Made with love</small></div>
+      <small>267 High St, Orpington, BR6 0NW · +44 7448 735777 · chatorasfood@gmail.com</small>
+    </div>
+  </footer>
+
+  <script>
+    const qtyInputs = [...document.querySelectorAll('[data-price]')];
+    const money = n => new Intl.NumberFormat('en-GB',{style:'currency',currency:'GBP'}).format(n);
+    function updateTotal(){
+      const ids=['fafda','jalebi','combo'];
+      let grand=0;
+      ids.forEach(id=>{
+        const el=document.getElementById(id);
+        const subtotal=(Number(el.value)||0)*Number(el.dataset.price);
+        document.getElementById(id+'Total').textContent=money(subtotal);
+        grand += subtotal;
+      });
+      document.getElementById('grandTotal').textContent=money(grand);
+    }
+    qtyInputs.forEach(i=>i.addEventListener('input',updateTotal));
+    updateTotal();
+    document.getElementById('date').min = new Date().toISOString().slice(0,10);
+
+    const msg = document.getElementById('msg');
+    if (new URLSearchParams(location.search).has('cancelled')) msg.textContent = 'Payment cancelled. Your order was not placed.';
+
+    document.getElementById('orderForm').addEventListener('submit', async function(e){
+      e.preventDefault();
+      const count = qtyInputs.reduce((a,i)=>a+(Number(i.value)||0),0);
+      if (!count) { msg.textContent = 'Please select at least one item.'; return; }
+      if (!this.reportValidity()) return;
+      const btn = document.querySelector('.pay');
+      btn.disabled = true; btn.textContent = 'Redirecting to payment…';
+      try {
+        const res = await fetch('/api/create-checkout', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({
+            items: {fafda: +document.getElementById('fafda').value||0, jalebi: +document.getElementById('jalebi').value||0, combo: +document.getElementById('combo').value||0},
+            date: document.getElementById('date').value, time: document.getElementById('time').value, name: document.getElementById('name').value,
+            mobile: document.getElementById('mobile').value, email: document.getElementById('email').value, notes: document.getElementById('notes').value
+          })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error);
+        location.href = data.url;
+      } catch (err) {
+        msg.textContent = err.message || 'Something went wrong. Please try again.';
+        btn.disabled = false; btn.textContent = 'Continue to Secure Payment →';
+      }
+    });
+  </script>
+</body>
+</html>
